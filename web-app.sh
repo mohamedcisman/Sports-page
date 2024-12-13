@@ -18,7 +18,7 @@ echo "CMD python /webapp/app.py" >> tempdir/Dockerfile
 
 cd tempdir 
 docker build -t webapp .
-docker run -t -d -p 5000:5000 --name test webapp
+docker run -t -d -p 5000:5000 --name testing webapp
 docker ps -a
 
 
