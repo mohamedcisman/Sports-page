@@ -15,6 +15,12 @@
       copy:
         src: /var/lib/jenkins/workspace/Sports-page-test/templates/index.html
         dest: /var/www/html
+
+    - name: Deploy CSS Files
+      copy:
+        src: /var/lib/jenkins/workspace/Sports-page-test/static/styles.css
+        dest: /var/www/css
+
   handlers:
     - name: RESTART APACHE2
       service: name=apache2 state=restarted
