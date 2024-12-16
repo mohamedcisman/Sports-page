@@ -19,7 +19,7 @@
     - name: Deploy CSS Files
       copy:
         src: /var/lib/jenkins/workspace/Sports-page-test/static/styles.css
-        dest: /var/www/css
+        dest: /var/www//css
 
   handlers:
     - name: RESTART APACHE2
